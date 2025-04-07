@@ -27,6 +27,7 @@ void setup() {
 }
 
 void loop() {
+  
 for(int i=0; i<4; i++){
   for(int c=0; c<3; c++){
     digitalWrite(pines1[c], sema1[i][c]);
