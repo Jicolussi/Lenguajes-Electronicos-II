@@ -1,5 +1,5 @@
 #include <arduino.h>
-int semal[6][3]{// r a v
+int semal[4][3]{//rav
                   {1,0,0},
                   {1,0,0},
                   {0,1,0}, 
@@ -7,7 +7,7 @@ int semal[6][3]{// r a v
                   {0,1,0},
                   {1,0,0}
                 };
-int sema2[6][3]{// r a v
+int sema2[4][3]{//nav
                   {0,0,1},
                   {0,1,0},
                   {1,0,0},
@@ -15,7 +15,6 @@ int sema2[6][3]{// r a v
                   {1,0,0},
                   {0,1,0}
                 };
-
 int pines1[3]={2,3,4};
 int pines2[3]={5,6,7};
 
