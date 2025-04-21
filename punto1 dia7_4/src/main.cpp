@@ -1,4 +1,6 @@
 #include <Arduino.h>
+#define DELAY_AMARILLO 1500
+#define DELAY_ROJO_VERDE 3000
 volatile bool flag = false;
 int semaforoA[3][3]={//r a v
                       {1,0,0},
@@ -31,7 +33,7 @@ void loop() {
     }
       for(int i=0; i<3; i++){
         digitalWrite(pinesA[i], semaforoP[0][i]);
-      }
+      }  
   flag=false;
   }else{
     for(int i=0; i<3; i++){
