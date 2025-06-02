@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gráfico de Fallas VW Gol</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background: #f8f8f8;
+      padding: 30px;
+    }
+
+    .pie-chart {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: conic-gradient(
+        #e74c3c 0% 40%,     /* Eléctricas (40%) - Rojo */
+        #3498db 40% 70%,    /* Motor (30%) - Azul */
+        #2ecc71 70% 90%,    /* Suspensión (20%) - Verde */
+        #f1c40f 90% 100%    /* Transmisión (10%) - Amarillo */
+      );
+      margin: 0 auto 20px auto;
+    }
+
+    .legend {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 14px;
+    }
+
+    .color-box {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+    }
+
+    .rojo { background-color: #e74c3c; }
+    .azul { background-color: #3498db; }
+    .verde { background-color: #2ecc71; }
+    .amarillo { background-color: #f1c40f; }
+  </style>
+</head>
+<body>
+
+  <h2>Fallas VW Gol</h2>
+
+  <div class="pie-chart"></div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="color-box rojo"></div> Eléctricas (40%)</div>
+    <div class="legend-item"><div class="color-box azul"></div> Motor (30%)</div>
+    <div class="legend-item"><div class="color-box verde"></div> Suspensión (20%)</div>
+    <div class="legend-item"><div class="color-box amarillo"></div> Transmisión (10%)</div>
+  </div>
+
+</body>
+</html>
