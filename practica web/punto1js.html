@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Punto 1</title>
+</head>
+<body>
+    <h1>ingrese dos numeros para que sean sumados.</h1>
+    
+    <h2>ingrese un valor:</h2>
+    <input type="number" id="cantidad1" name="cantidad"> 
+
+    <h2>ingrese su segundo valor:</h2>
+    <input type="number" id="cantidad2" name="cantidad">
+
+    <button id="suma" value="sumar">sumar</button>
+
+    <script>
+        let boton = document.getElementById("suma");
+        boton.addEventListener("click", function () {
+            let v1= parseInt(document.getElementById("cantidad1").value);   
+            let v2= parseInt(document.getElementById("cantidad2").value);
+            let resultado = v1 + v2;
+            console.log("Resultado:", resultado);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Punto 3</title>
+</head>
+<body>
+    <h1>ingrese dos numeros para que sean sumados.</h1>
+    
+    <h2>ingrese un valor:</h2>
+    <input type="number" id="cantidad1" name="cantidad"> 
+
+    <h2>ingrese su segundo valor:</h2>
+    <input type="number" id="cantidad2" name="cantidad">
+
+    <button id="comp" value="sumar">Enviar</button>
+
+    <script>
+        let boton = document.getElementById("comp");
+        boton.addEventListener("click", function () {
+            let v1= parseInt(document.getElementById("cantidad1").value);   
+            let v2= parseInt(document.getElementById("cantidad2").value);
+            if(v1>v2){
+                alert("el primer numero es el mayor:");
+            }
+            else{
+                alert("el segundo numero es el mayor:");
+            }
+        });
+    </script>
+
+</body>
+</html>
